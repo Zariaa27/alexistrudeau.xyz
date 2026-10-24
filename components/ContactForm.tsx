@@ -5,7 +5,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { messages } from "@/lib/i18n";
 
 const contactEmail = "hello@alexistrudeau.xyz";
-const formId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID;
+const formId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID || "xzeedbkb";
 
 type SubmissionState = "idle" | "submitting" | "success" | "error";
 
