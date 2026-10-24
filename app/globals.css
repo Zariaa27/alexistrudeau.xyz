@@ -40,7 +40,13 @@ a { color: inherit; text-decoration: none; }
 .site-nav { display: flex; justify-content: center; gap: 34px; color: var(--muted); font-size: 13px; }
 .site-nav a, .text-link, .site-footer a { transition: color 160ms ease; }
 .site-nav a:hover, .text-link:hover, .site-footer a:hover { color: var(--lime); }
+.header-actions { display: flex; justify-self: end; align-items: center; gap: 15px; }
 .header-availability { justify-self: end; display: inline-flex; align-items: center; gap: 9px; font-size: 12px; }
+.language-toggle { display: inline-flex; gap: 2px; padding: 2px; border: 1px solid var(--line); border-radius: 3px; }
+.language-toggle button { min-width: 29px; min-height: 27px; padding: 0 5px; border: 0; border-radius: 2px; background: transparent; color: var(--muted); font: 9px var(--font-geist-mono), monospace; cursor: pointer; transition: background 160ms ease, color 160ms ease; }
+.language-toggle button:hover { color: var(--foreground); }
+.language-toggle button.is-active { background: #263127; color: var(--lime); }
+.language-toggle button:focus-visible { outline: 1px solid var(--mint); outline-offset: 2px; }
 .status-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 12px #d7fa6977; }
 
 .hero { min-height: 650px; display: grid; grid-template-columns: 1fr 0.88fr; align-items: center; gap: 64px; position: relative; isolation: isolate; padding-block: 72px 104px; }
